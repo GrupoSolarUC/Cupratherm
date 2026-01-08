@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CupraTherm - Advanced Thermal Energy Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">CupraTherm</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#motivation" class="nav-link">Motivación</a></li>
+                <li><a href="#technology" class="nav-link">Tecnología</a></li>
+                <li><a href="#pilot" class="nav-link">Piloto</a></li>
+                <li><a href="#results" class="nav-link">Resultados</a></li>
+                <li><a href="#control" class="nav-link">Sistema de Control</a></li>
+                <li><a href="#publications" class="nav-link">Publicaciones</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>CupraTherm</h1>
+            <p class="tagline">Soluciones Avanzadas de Almacenamiento de Energía Térmica</p>
+            <p class="hero-description">Pioneros en tecnología de almacenamiento de energía térmica de próxima generación para un futuro sustentable</p>
+            <a href="#motivation" class="btn btn-primary">Conoce Más</a>
+        </div>
+    </section>
+
+    <!-- Motivation Section -->
+    <section id="motivation" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Motivación</h2>
+            <div class="motivation-three-columns">
+                <!-- Left Block: Energy Resource -->
+                <div class="energy-block">
+                    <h3 class="block-title">Recurso Energético</h3>
+                    <div class="block-image">
+                        <img src="images/energy_source.svg" alt="Recurso Energético">
+                    </div>
+                    <p class="block-caption">Energía Eléctrica Renovable</p>
+                </div>
+
+                <!-- Center Block: Energy Storage -->
+                <div class="energy-block">
+                    <h3 class="block-title">Almacenamiento de Energía</h3>
+                    <div class="block-image">
+                        <img src="images/packed-bed.svg" alt="Almacenamiento de Energía - Lecho Empaquetado">
+                    </div>
+                    <p class="block-caption">Sistema de Almacenamiento de Energía Térmica</p>
+                </div>
+
+                <!-- Right Block: Energy Demand -->
+                <div class="energy-block">
+                    <h3 class="block-title">Demanda Energética</h3>
+                    <div class="energy-demand-zigzag">
+                        <div class="demand-item demand-odd">
+                            <div class="demand-icon">🏭</div>
+                            <span>Industria</span>
+                        </div>
+                        <div class="demand-item demand-even">
+                            <div class="demand-icon">🔥</div>
+                            <span>Suministro de Calor</span>
+                        </div>
+                        <div class="demand-item demand-odd">
+                            <div class="demand-icon">⚡</div>
+                            <span>Suministro Eléctrico</span>
+                        </div>
+                        <div class="demand-item demand-even">
+                            <div class="demand-icon">🏢</div>
+                            <span>Otros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="motivation-content">
+                <div class="motivation-intro">
+                    <p>La transición hacia fuentes de energía renovables requiere soluciones innovadoras para el almacenamiento de energía. La energía solar y eólica, aunque abundantes, son intermitentes por naturaleza. CupraTherm aborda este desafío crítico proporcionando soluciones eficientes de almacenamiento de energía térmica.</p>
+                </div>
+                <div class="motivation-grid">
+                    <div class="motivation-card">
+                        <div class="card-icon">🌍</div>
+                        <h3>Acción Climática</h3>
+                        <p>Reduciendo emisiones de carbono al permitir una mayor integración de fuentes de energía renovable en la red eléctrica.</p>
+                    </div>
+                    <div class="motivation-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Seguridad Energética</h3>
+                        <p>Proporcionando almacenamiento confiable de energía para balancear las fluctuaciones de oferta y demanda en sistemas de energía renovable.</p>
+                    </div>
+                    <div class="motivation-card">
+                        <div class="card-icon">💰</div>
+                        <h3>Eficiencia Económica</h3>
+                        <p>Desarrollando soluciones de almacenamiento económicamente viables que puedan competir con métodos tradicionales.</p>
+                    </div>
+                    <div class="motivation-card">
+                        <div class="card-icon">🔬</div>
+                        <h3>Excelencia en Investigación</h3>
+                        <p>Avanzando en la comprensión científica del almacenamiento de energía térmica a través de investigación rigurosa y experimentación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Tecnología</h2>
+            <p class="section-intro">Almacenamiento térmico de calor sensible utilizando escoria de cobre (copper slag) en un sistema de lecho empaquetado (packed bed) que conecta energía renovable con demanda industrial.</p>
+            
+            <div class="technology-layout">
+                <!-- Main Visualization: Packed Bed + Icons on Perimeter -->
+                <div class="technology-main">
+                    <div class="packed-bed-container">
+                        <!-- Main packed bed visualization -->
+                        <div class="packed-bed-visual">
+                            <!-- Main circle overlay -->
+                            <img src="images/circle-main.svg" alt="Circle" class="circle-overlay">
+
+                            <!-- Packed bed background -->
+                            <img src="images/packed-bed.svg" alt="Packed Bed" class="packed-bed-base">
+                            
+                            <!-- Copper slag stone (enlarged from sphere) -->
+                            <img src="images/copper-slag-stone.svg" alt="Copper Slag" class="copper-slag-stone">
+                            
+                            <!-- Arrow connector from sphere to stone -->
+                            <img src="images/arrow-connector.svg" alt="Connector" class="arrow-connector">
+                        </div>
+
+                        <!-- Copper Slag Properties - Icons on Circle Perimeter -->
+                        <div class="slag-properties">
+                            <!-- Property 1: Top -->
+                            <div class="property-item">
+                                <div class="property-icon">
+                                    <img src="images/icon-byproduct.svg" alt="By-product icon" class="icon-svg">
+                                </div>
+                                <div class="property-content">
+                                    <h4>Subproducto de Pirometalurgia</h4>
+                                    <p>Residuo del proceso de fundición del cobre transformado en recurso valioso.</p>
+                                </div>
+                            </div>
+
+                            <!-- Property 2: Right -->
+                            <div class="property-item clickable">
+                                <a href="https://doi.org/10.1016/j.solener.2019.08.084" target="_blank" class="property-link">
+                                    <div class="property-icon">
+                                        <img src="images/icon-abundant.svg" alt="Abundant material icon" class="icon-svg">
+                                    </div>
+                                    <div class="property-content">
+                                        <h4>Material Abundante <span class="external-icon">↗</span></h4>
+                                        <p>Millones de toneladas disponibles anualmente en Chile.</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- Property 3: Bottom -->
+                            <div class="property-item clickable">
+                                <a href="https://doi.org/10.1016/j.applthermaleng.2020.115431" target="_blank" class="property-link">
+                                    <div class="property-icon">
+                                        <img src="images/icon-thermal.svg" alt="Thermal properties icon" class="icon-svg">
+                                    </div>
+                                    <div class="property-content">
+                                        <h4>Propiedades Térmicas Óptimas <span class="external-icon">↗</span></h4>
+                                        <p>Alta capacidad calorífica y estabilidad hasta 600°C.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opportunities Section - Horizontal Cards -->
+                <div class="opportunities-section">
+                    <h3 class="opportunities-title">Oportunidades</h3>
+                    <div class="opportunities-grid">
+                        <div class="opportunity-card">
+                            <div class="opportunity-number">01</div>
+                            <h4>Integración de Renovables</h4>
+                            <p>Almacenar excedentes de energía solar y eólica para uso continuo.</p>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <div class="opportunity-number">02</div>
+                            <h4>Descarbonización Industrial</h4>
+                            <p>Suministrar calor de proceso reemplazando combustibles fósiles.</p>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <div class="opportunity-number">03</div>
+                            <h4>Economía Circular</h4>
+                            <p>Valorizar residuos mineros cerrando ciclos productivos.</p>
+                        </div>
+
+                        <div class="opportunity-card">
+                            <div class="opportunity-number">04</div>
+                            <h4>Solución Escalable</h4>
+                            <p>Sistema modular adaptable a diferentes escalas industriales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilot Section -->
+    <section id="pilot" class="section">
+        <div class="container">
+            <h2 class="section-title">Proyecto Piloto</h2>
+            <p class="section-intro">Nuestro proyecto piloto demuestra la implementación práctica de la tecnología CupraTherm en un ambiente de laboratorio controlado. Las siguientes imágenes muestran nuestra configuración experimental e instalaciones de prueba.</p>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-image">
+                        <span>Configuración de Laboratorio 1</span>
+                    </div>
+                    <p class="gallery-caption">Aparato experimental principal mostrando la unidad de almacenamiento térmico</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-image">
+                        <span>Configuración de Laboratorio 2</span>
+                    </div>
+                    <p class="gallery-caption">Configuración del intercambiador de calor para pruebas de rendimiento</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-image">
+                        <span>Configuración de Laboratorio 3</span>
+                    </div>
+                    <p class="gallery-caption">Sistema de instrumentación y adquisición de datos</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-image gallery-image">
+                        <span>Configuración de Laboratorio 4</span>
+                    </div>
+                    <p class="gallery-caption">Interfaz de monitoreo y control de temperatura</p>
+                </div>
+            </div>
+
+            <div class="pilot-details">
+                <h3>Especificaciones del Piloto</h3>
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span class="spec-label">Capacidad de Almacenamiento</span>
+                        <span class="spec-value">Configurable</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Temperatura de Operación</span>
+                        <span class="spec-value">Por especificar</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Eficiencia</span>
+                        <span class="spec-value">En evaluación</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-label">Vida Útil de Ciclos</span>
+                        <span class="spec-value">Pruebas en progreso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Resultados de Simulación</h2>
+            <p class="section-intro">Nuestros estudios integrales de simulación proporcionan información sobre las características de rendimiento del sistema CupraTherm bajo diversas condiciones de operación.</p>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="placeholder-image result-image">
+                        <span>Gráfico de Simulación 1</span>
+                    </div>
+                    <h3>Rendimiento Térmico</h3>
+                    <p>Análisis de tasas de transferencia de calor y distribuciones de temperatura a lo largo del medio de almacenamiento.</p>
+                </div>
+                <div class="result-card">
+                    <div class="placeholder-image result-image">
+                        <span>Gráfico de Simulación 2</span>
+                    </div>
+                    <h3>Análisis de Eficiencia</h3>
+                    <p>Evaluación de la eficiencia del sistema bajo condiciones variables de carga y temperaturas ambientales.</p>
+                </div>
+                <div class="result-card">
+                    <div class="placeholder-image result-image">
+                        <span>Gráfico de Simulación 3</span>
+                    </div>
+                    <h3>Estabilidad a Largo Plazo</h3>
+                    <p>Simulación del rendimiento del sistema durante períodos operacionales extendidos.</p>
+                </div>
+            </div>
+
+            <div class="key-findings">
+                <h3>Hallazgos Clave</h3>
+                <ul>
+                    <li>Los resultados de simulación demuestran capacidades eficientes de almacenamiento de energía térmica</li>
+                    <li>El sistema muestra rendimiento estable en los rangos de temperatura de operación</li>
+                    <li>Los estudios de optimización de transferencia de calor guían el diseño experimental</li>
+                    <li>Las predicciones del modelo se alinean bien con las observaciones experimentales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Control System Section -->
+    <section id="control" class="section">
+        <div class="container">
+            <h2 class="section-title">Sistema de Control</h2>
+            <p class="section-intro">El sistema de control de CupraTherm asegura una operación óptima a través de monitoreo avanzado y algoritmos de control automatizados.</p>
+            
+            <div class="control-content">
+                <div class="control-diagram">
+                    <div class="placeholder-image control-image">
+                        <span>Diagrama del Sistema de Control</span>
+                    </div>
+                </div>
+                <div class="control-details">
+                    <h3>Arquitectura del Sistema</h3>
+                    <p>Nuestro sistema de control integra múltiples sensores y actuadores para mantener un control preciso sobre el proceso de almacenamiento térmico.</p>
+                    
+                    <h4>Componentes</h4>
+                    <ul class="control-list">
+                        <li><strong>Sensores de Temperatura:</strong> Termocuplas de alta precisión distribuidas por todo el sistema</li>
+                        <li><strong>Controladores de Flujo:</strong> Bombas de velocidad variable para la circulación del fluido de transferencia de calor</li>
+                        <li><strong>Adquisición de Datos:</strong> Monitoreo y registro en tiempo real de todos los parámetros del sistema</li>
+                        <li><strong>Algoritmo de Control:</strong> Estrategias de control adaptativo para carga y descarga óptimas</li>
+                    </ul>
+                    
+                    <h4>Características</h4>
+                    <ul class="control-list">
+                        <li>Monitoreo y visualización en tiempo real</li>
+                        <li>Procedimientos automatizados de apagado de seguridad</li>
+                        <li>Capacidades de acceso y control remoto</li>
+                        <li>Registro de datos para análisis de rendimiento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Publicaciones</h2>
+            <p class="section-intro">Nuestras contribuciones de investigación al campo del almacenamiento de energía térmica. Haz clic en los enlaces a continuación para acceder a nuestros artículos publicados.</p>
+            
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="pub-icon">📄</div>
+                    <div class="pub-content">
+                        <h3>Título de Publicación 1</h3>
+                        <p class="pub-authors">Autores: [Nombres de autores por agregar]</p>
+                        <p class="pub-journal">Revista: [Nombre de revista por agregar]</p>
+                        <p class="pub-year">Año: [Año de publicación]</p>
+                        <a href="#" class="pub-link">Ver Artículo →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-icon">📄</div>
+                    <div class="pub-content">
+                        <h3>Título de Publicación 2</h3>
+                        <p class="pub-authors">Autores: [Nombres de autores por agregar]</p>
+                        <p class="pub-journal">Revista: [Nombre de revista por agregar]</p>
+                        <p class="pub-year">Año: [Año de publicación]</p>
+                        <a href="#" class="pub-link">Ver Artículo →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-icon">📄</div>
+                    <div class="pub-content">
+                        <h3>Título de Publicación 3</h3>
+                        <p class="pub-authors">Autores: [Nombres de autores por agregar]</p>
+                        <p class="pub-journal">Revista: [Nombre de revista por agregar]</p>
+                        <p class="pub-year">Año: [Año de publicación]</p>
+                        <a href="#" class="pub-link">Ver Artículo →</a>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="publications-note">Se agregarán publicaciones adicionales a medida que estén disponibles.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CupraTherm</h3>
+                    <p>Avanzando en tecnología de almacenamiento de energía térmica para un futuro sustentable.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#technology">Tecnología</a></li>
+                        <li><a href="#motivation">Motivación</a></li>
+                        <li><a href="#pilot">Piloto</a></li>
+                        <li><a href="#results">Resultados</a></li>
+                        <li><a href="#control">Sistema de Control</a></li>
+                        <li><a href="#publications">Publicaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>Para más información sobre CupraTherm, por favor contacta al equipo de investigación.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Proyecto CupraTherm. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
