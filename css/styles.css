@@ -812,66 +812,200 @@ img {
 /* ============================================
    Pilot Section
    ============================================ */
-.gallery {
+
+/* Modular Proposal: Container + Description */
+.pilot-modular {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    margin-bottom: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-bottom: 80px;
+    padding: 40px 0;
 }
 
-.gallery-item {
-    text-align: center;
+.modular-image {
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.gallery-image {
-    min-height: 200px;
+.container-fig {
+    width: 100%;
+    height: auto;
+}
+
+.modular-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modular-description h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
-.gallery-caption {
-    color: var(--text-light);
-    font-size: 0.9rem;
+.modular-description > p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 20px;
 }
 
-.pilot-details {
+.modular-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+    padding: 15px;
     background: var(--background-alt);
-    padding: 40px;
-    border-radius: 15px;
+    border-radius: 10px;
+    transition: var(--transition);
 }
 
-.pilot-details h3 {
-    font-size: 1.5rem;
+.feature-item:hover {
+    background: white;
+    box-shadow: var(--shadow);
+    transform: translateX(5px);
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.feature-item h4 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 3px;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+
+/* Pilot Configurations */
+.pilot-configurations {
+    margin-top: 60px;
+}
+
+.pilot-configurations h3 {
+    font-size: 1.8rem;
     color: var(--secondary-color);
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-.specs-grid {
+.configs-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.configs-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.spec-item {
-    text-align: center;
-    padding: 20px;
+.config-card {
     background: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
-.spec-label {
-    display: block;
-    font-size: 0.9rem;
-    color: var(--text-light);
+.config-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.config-card.in-review {
+    cursor: default;
+}
+
+.config-card.in-review:hover {
+    transform: translateY(-3px);
+}
+
+.config-image {
+    width: 100%;
+    height: 250px; /* ← EDITA AQUÍ LA ALTURA DE LAS IMÁGENES */
+    overflow: hidden;
+    background: var(--background-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.config-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ← EDITA AQUÍ: 'cover' recorta, 'contain' ajusta completa */
+    transition: var(--transition);
+}
+
+.config-card:hover .config-image img {
+    transform: scale(1.05);
+}
+
+.config-info {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.config-info h4 {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
     margin-bottom: 10px;
 }
 
-.spec-value {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: 600;
+.config-info p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.config-link {
+    display: inline-block;
     color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.config-card:hover .config-link {
+    color: var(--primary-dark);
+    transform: translateX(3px);
+}
+
+.config-status {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--background-alt);
+    color: var(--text-light);
+    font-size: 0.85rem;
+    border-radius: 5px;
+    font-style: italic;
 }
 
 /* ============================================
@@ -1144,6 +1278,15 @@ img {
         margin-left: 20px;
     }
     
+    .pilot-modular {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .configs-grid {
+        grid-template-columns: 1fr;
+    }
+    
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1262,6 +1405,27 @@ img {
     
     .demand-even {
         margin-left: 15px;
+    }
+    
+    .pilot-modular {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .modular-description h3 {
+        font-size: 1.5rem;
+    }
+    
+    .feature-item {
+        padding: 15px;
+    }
+    
+    .configs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .config-image {
+        height: 200px;
     }
     
     .gallery {
