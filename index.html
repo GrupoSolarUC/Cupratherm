@@ -219,53 +219,83 @@
     <section id="pilot" class="section">
         <div class="container">
             <h2 class="section-title">Proyecto Piloto</h2>
-            <p class="section-intro">Nuestro proyecto piloto demuestra la implementación práctica de la tecnología CupraTherm en un ambiente de laboratorio controlado. Las siguientes imágenes muestran nuestra configuración experimental e instalaciones de prueba.</p>
+            <p class="section-intro">CupraTherm propone una solución modular y escalable de almacenamiento térmico basada en containers, con múltiples configuraciones validadas experimentalmente.</p>
             
-            <div class="gallery">
-                <div class="gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <span>Configuración de Laboratorio 1</span>
-                    </div>
-                    <p class="gallery-caption">Aparato experimental principal mostrando la unidad de almacenamiento térmico</p>
+            <!-- Modular Proposal: Container + Description -->
+            <div class="pilot-modular">
+                <div class="modular-image">
+                    <img src="images/container_fig.svg" alt="Sistema Modular en Containers" class="container-fig">
                 </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <span>Configuración de Laboratorio 2</span>
+                <div class="modular-description">
+                    <h3>Propuesta Modular</h3>
+                    <p>La propuesta CupraTherm consiste en un <strong>sistema modular basado en containers</strong> que permite agregar o remover unidades de almacenamiento térmico según las necesidades específicas del proceso industrial o requerimiento energético.</p>
+                    
+                    <div class="modular-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📦</span>
+                            <div>
+                                <h4>Escalabilidad Industrial</h4>
+                                <p>Adaptable a diferentes escalas, desde aplicaciones piloto hasta plantas industriales completas.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🔌</span>
+                            <div>
+                                <h4>Solución Plug & Play</h4>
+                                <p>Instalación rápida y flexible que se integra fácilmente con infraestructura existente.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚙️</span>
+                            <div>
+                                <h4>Configuración Personalizada</h4>
+                                <p>Permite ajustar capacidad, temperatura y flujo según demanda específica.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="gallery-caption">Configuración del intercambiador de calor para pruebas de rendimiento</p>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <span>Configuración de Laboratorio 3</span>
-                    </div>
-                    <p class="gallery-caption">Sistema de instrumentación y adquisición de datos</p>
-                </div>
-                <div class="gallery-item">
-                    <div class="placeholder-image gallery-image">
-                        <span>Configuración de Laboratorio 4</span>
-                    </div>
-                    <p class="gallery-caption">Interfaz de monitoreo y control de temperatura</p>
                 </div>
             </div>
 
-            <div class="pilot-details">
-                <h3>Especificaciones del Piloto</h3>
-                <div class="specs-grid">
-                    <div class="spec-item">
-                        <span class="spec-label">Capacidad de Almacenamiento</span>
-                        <span class="spec-value">Configurable</span>
+            <!-- Pilot Configurations -->
+            <div class="pilot-configurations">
+                <h3>Configuraciones Experimentales</h3>
+                <p class="configs-intro">Hemos desarrollado y validado tres configuraciones de flujo en escala de laboratorio:</p>
+                
+                <div class="configs-grid">
+                    <!-- Configuration 1: Horizontal -->
+                    <a href="https://doi.org/10.1016/j.est.2025.116769" target="_blank" class="config-card">
+                        <div class="config-image">
+                            <img src="images/horizontal_bed.jpeg" alt="Configuración Horizontal">
+                        </div>
+                        <div class="config-info">
+                            <h4>Configuración Horizontal</h4>
+                            <p>Primera implementación experimental validada.</p>
+                            <span class="config-link">Ver publicación ↗</span>
+                        </div>
+                    </a>
+
+                    <!-- Configuration 2: Axial -->
+                    <div class="config-card in-review">
+                        <div class="config-image">
+                            <img src="images/isometric_axial_rock_bed.jpg" alt="Configuración Axial">
+                        </div>
+                        <div class="config-info">
+                            <h4>Configuración Axial</h4>
+                            <p>Flujo paralelo al eje del lecho empaquetado.</p>
+                            <span class="config-status">Publicación en revisión</span>
+                        </div>
                     </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Temperatura de Operación</span>
-                        <span class="spec-value">Por especificar</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Eficiencia</span>
-                        <span class="spec-value">En evaluación</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Vida Útil de Ciclos</span>
-                        <span class="spec-value">Pruebas en progreso</span>
+
+                    <!-- Configuration 3: Radial -->
+                    <div class="config-card in-review">
+                        <div class="config-image">
+                            <img src="images/radial_bed.jpg" alt="Configuración Radial">
+                        </div>
+                        <div class="config-info">
+                            <h4>Configuración Radial</h4>
+                            <p>Flujo radial desde el centro hacia el exterior.</p>
+                            <span class="config-status">Publicación en revisión</span>
+                        </div>
                     </div>
                 </div>
             </div>
